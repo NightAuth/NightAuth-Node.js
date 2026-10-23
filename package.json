@@ -1,0 +1,35 @@
+{
+  "name": "@nightauth/node-sdk",
+  "version": "1.0.0",
+  "description": "Official NightAuth Node.js SDK and interactive console client",
+  "main": "sdk/nightauth.js",
+  "exports": {
+    "./nightauth": "./sdk/nightauth.js",
+    ".": "./sdk/nightauth.js"
+  },
+  "scripts": {
+    "console": "node console/main.js",
+    "start": "node console/main.js",
+    "test": "node --test test/*.test.js",
+    "test:offline": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "nightauth",
+    "licensing",
+    "authentication",
+    "security",
+    "hwid-lock",
+    "cryptography"
+  ],
+  "author": "Night Auth Official <devnightauth@gmail.com>",
+  "license": "Elastic-2.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "optionalDependencies": {
+    "qrcode-terminal": "^0.12.0"
+  },
+  "bin": {
+    "nightauth-console": "./console/main.js"
+  }
+}
